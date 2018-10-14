@@ -1,0 +1,21 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noEmitOnError": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "target": "es5",
+        "module": "es6",
+        "lib": ["dom", "es5"],
+        "outDir": "wwwroot/js"
+    },
+    "include": [
+        "wwwroot/ts/**/*.ts"
+    ],
+    "exclude": [
+        "**/node_modules",
+        "**/*.spec.ts"
+    ]
+}

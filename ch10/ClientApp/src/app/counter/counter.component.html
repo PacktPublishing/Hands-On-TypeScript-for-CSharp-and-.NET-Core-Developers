@@ -1,0 +1,34 @@
+<h1>Counter</h1>
+
+<p>This is a simple example of an Angular component.</p>
+
+<!--<p>Current count: <strong>{{ currentCount|currency}}</strong></p>-->
+<!--<p>Current count:
+  <strong [style.color]="currentCount>4? 'red' : black"
+                [style.font-size.%]="currentCount>4? 150 : 100">
+  {{ currentCount|currency}}
+  </strong>
+</p>-->
+<p>
+  Current count:
+  <strong [ngStyle]="currentCount>4 ? {'color': 'red', 'font-size': '150%'}:
+                     {'color': 'black', 'font-size': '100%'}">
+    {{ currentCount|currency}}
+  </strong>
+</p>
+
+<!--<p>Current count: <strong>{{currentCount*currentCount|currency}}</strong></p>-->
+<!--<button (click)="incrementCounter()">Increment</button>-->
+<!--<button class="btn" [class.btn-primary]="currentCount>4"
+        (click)="incrementCounter()">Increment
+</button>-->
+
+<button  [ngClass]="{'btn': true, 'btn-primary': currentCount>4, 'btn-info':currentCount<=4}"
+        (click)="incrementCounter($event)">Increment
+</button>
+
+<p>
+  The text mirrors the input content:<input [(ngModel)]="testInput" #toMirror /><br />
+  direct mirror:&nbsp;<span>{{toMirror.value}}</span><br />
+  property mirror:&nbsp;<span>{{testInput}}</span><br />
+</p>

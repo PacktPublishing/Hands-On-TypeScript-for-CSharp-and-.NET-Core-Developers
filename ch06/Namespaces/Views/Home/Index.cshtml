@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "To Do";
+}
+
+<h1>@ViewData["Title"]</h1>
+<ul class="list-group" style="min-height:200px" id="main_list">
+        <li class="list-group-item">
+            <button type="button" class="btn btn-sm" title="remove">
+                <span class="glyphicon glyphicon-minus" 
+                      aria-hidden="true"></span>
+            </button>
+            <span>to do content here</span>
+        </li>
+</ul>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="input-group">
+            <input type="text" class="form-control" 
+                   placeholder="Insert here to do..." id="main_input">
+            <span class="input-group-btn">
+                <button class="btn btn-primaryt" type="button" 
+                        id="main_add">Add to do</button>
+            </span>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+<script src="~/js/lib/AbstractLists.js"></script>
+<script src="~/js/lib/plainList.js"></script>
+<script src="~/js/modularToDoList.js"></script>
+}

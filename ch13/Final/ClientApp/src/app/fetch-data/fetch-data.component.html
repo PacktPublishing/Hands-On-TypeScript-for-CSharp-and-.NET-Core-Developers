@@ -1,0 +1,33 @@
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!forecasts"><em>Loading...</em></p>
+
+<table class='table'>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Temp. (C)</th>
+      <th>Temp. (F)</th>
+      <th>Summary</th>
+    </tr>
+  </thead>
+  <tbody [@enterLeaveAnimation]="forecasts.length">
+    <tr *ngFor="let forecast of forecasts">
+      <td>{{ forecast.dateFormatted }}</td>
+      <td>{{ forecast.temperatureC }}</td>
+      <td>{{ forecast.temperatureF }}</td>
+      <td>{{ forecast.summary }}</td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <button (click)="sendLocalData()" type="button" class="btn btn-primary">
+    send local data
+  </button>
+  <span>&nbsp;</span>
+  <button (click)="goHome()" type="button" class="btn btn-primary">
+    go home
+  </button>
+</div>

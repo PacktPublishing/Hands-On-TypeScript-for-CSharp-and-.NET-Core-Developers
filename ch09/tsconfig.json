@@ -1,0 +1,30 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noEmitOnError": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "target": "es5",
+        "downlevelIteration": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "dom",
+            "es5",
+            "es2015.symbol",
+            "es2015.symbol.wellknown",
+            "es2015.generator",
+            "es2015.iterable",
+            "es2015.generator",
+            "dom.iterable",
+            "es2015.collection",
+            "es2015.promise",
+            "es2018.promise"
+        ],
+        "outDir": "wwwroot/js"
+    },
+    "include": [
+        "wwwroot/ts/**/*.ts"
+    ]
+}

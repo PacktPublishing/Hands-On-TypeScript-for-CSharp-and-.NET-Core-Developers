@@ -1,0 +1,12 @@
+<div>
+  <a [routerLink]='["./child1"]'>Child 1</a>&nbsp;
+  <a [routerLink]='["./child2"]'>Child 2</a>&nbsp;&nbsp;&nbsp;
+  <a [routerLink]='{ outlets: { extra: ["add"] } }'>Add extra content</a>&nbsp;
+  <a [routerLink]='{ outlets: { extra: ["remove"] } }'>Remove extra content</a>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
+<div>
+  <router-outlet name="extra"></router-outlet>
+</div>

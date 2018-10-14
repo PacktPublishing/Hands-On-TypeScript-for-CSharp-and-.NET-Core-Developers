@@ -1,0 +1,42 @@
+<form (ngSubmit)="onSubmit()" #mainForm="ngForm" [@formErrorInOut] = "errorSubmitted&&mainForm.invalid"
+      [ngClass]="{ 'form-submitted':errorSubmitted}">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" [(ngModel)]="Model.Name"
+           required minlength="5" maxlength="20"
+           id="name" name="name" #name="ngModel" >
+    <div @insertRemove *ngIf="name.invalid && (name.dirty || name.touched || errorSubmitted)"
+         class="alert alert-danger">
+          <div *inputError="let error from name.errors">{{ error }}</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="quantity">Quantity</label>
+    <input type="number" class="form-control" [(ngModel)]="Model.Quantity"
+           required min="1" max="10"
+           step="1"
+           id="quantity" name="quantity" #quantity="ngModel">
+    <div @insertRemove *ngIf="quantity.invalid && (quantity.dirty || quantity.touched || errorSubmitted)"
+         class="alert alert-danger">
+      <div *inputError="let error from quantity.errors">{{ error }}</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="name">Size</label>
+    <select class="form-control" [(ngModel)]="Model.Size"
+            required
+            id="size" name="size" #size="ngModel">
+      <option value="">none selected</option>
+      <option *ngFor="let size of allSizes" [value]="size">
+        {{size|capitalize}}
+      </option>
+    </select>
+    <div @insertRemove *ngIf="size.invalid && (size.dirty || size.touched || errorSubmitted)"
+         class="alert alert-danger">
+      <div *inputError="let error from size.errors">{{ error }}</div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">
+    Submit
+  </button>
+</form>

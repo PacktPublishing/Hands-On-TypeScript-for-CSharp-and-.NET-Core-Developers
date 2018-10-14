@@ -1,0 +1,11 @@
+.ng-dirty.ng-valid:not(form) {
+  /*green border*/
+  border: 4px solid #42A948 !important;
+}
+
+.ng-touched.ng-invalid:not(form),
+.ng-dirty.ng-invalid:not(form),
+.form-submitted .ng-invalid {
+  /*red border*/
+  border: 4px solid #a94442 !important;
+}

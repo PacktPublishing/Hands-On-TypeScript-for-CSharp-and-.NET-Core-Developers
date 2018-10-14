@@ -1,0 +1,1 @@
+{"version":3,"file":"aggregate.js","sourceRoot":"","sources":["../../ts/lib/aggregate.ts"],"names":[],"mappings":"AAAA,mBAAyB,KAAU,EAC/B,IAAmC;IACnC,IAAI,aAA4B,CAAC;IACjC,KAAc,UAAK,EAAL,eAAK,EAAL,mBAAK,EAAL,IAAK;QAAd,IAAI,CAAC,cAAA;QACN,aAAa,GAAG,IAAI,CAAC,aAAa,EAAE,CAAC,CAAC,CAAC;KAAA;IAC3C,OAAO,aAAa,CAAC;AACzB,CAAC"}

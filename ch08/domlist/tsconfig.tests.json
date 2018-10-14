@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noEmitOnError": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "target": "es5",
+        "module": "commonjs",
+        "rootDir":"specSources",
+        "outDir": "spec",
+        "moduleResolution": "Node"
+    },
+    "include": [
+        "specSources/**/*.ts"
+    ]
+}
