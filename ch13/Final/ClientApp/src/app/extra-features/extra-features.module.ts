@@ -13,7 +13,7 @@ import { Child3Component } from './child3/child3.component';
     CommonModule,
     RouterModule.forChild([
     {
-      path: '', component: TestComponentComponent,
+      path: 'loaded', component: TestComponentComponent,
       children: [
         { path: 'child1', component: Child1Component },
         { path: 'child2', component: Child2Component },

@@ -44,8 +44,6 @@ export abstract class AppendGrid<T> {
                    selector: string): HTMLElement | null {
         while (n != null && n.tagName != "BODY") {
             if (n.matches && n.matches(selector)) return n;
-            else if (n.msMatchesSelector &&
-                n.msMatchesSelector(selector)) return n;
             else if (n.webkitMatchesSelector
                 && n.webkitMatchesSelector(selector)) return n;
             n = n.parentNode as HTMLElement;
