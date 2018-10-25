@@ -7,9 +7,8 @@
     alert(s1 == s2); //display false
     
     //symbol used as object property
-    let o1 = {
-        [s1]: 1
-    };
+    let o1: any = {};
+    o1[s1] = 1;
     alert(o1[s1]);
 
     export let className = Symbol("className");
