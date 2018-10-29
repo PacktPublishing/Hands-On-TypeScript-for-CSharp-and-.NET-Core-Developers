@@ -3,7 +3,7 @@ Hands-On TypeScript for C# and .NET Core Developers, published by Packt
 
 <a href="https://www.packtpub.com/application-development/hands-typescript-c-and-net-developers?utm_source=github&utm_medium=repository&utm_campaign=9781789130287 "><img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B10759_MockupCover.png" alt="" height="256px" align="right"></a>
 
-This is the code repository for [](https://www.packtpub.com/application-development/hands-typescript-c-and-net-developers?utm_source=github&utm_medium=repository&utm_campaign=9781789130287 ), published by Packt.
+This is the code repository for [Hands-On TypeScript for C# and .NET Core Developers](https://www.packtpub.com/application-development/hands-typescript-c-and-net-developers?utm_source=github&utm_medium=repository&utm_campaign=9781789130287 ), published by Packt.
 
 **Explore the possibilities of C# for developing a variety of efficient applications**
 
