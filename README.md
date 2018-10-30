@@ -5,7 +5,7 @@ Hands-On TypeScript for C# and .NET Core Developers, published by Packt
 
 This is the code repository for [Hands-On TypeScript for C# and .NET Core Developers](https://www.packtpub.com/application-development/hands-typescript-c-and-net-developers?utm_source=github&utm_medium=repository&utm_campaign=9781789130287 ), published by Packt.
 
-**Explore the possibilities of C# for developing a variety of efficient applications**
+**Transition from C# to TypeScript 3.1 and build applications with ASP.NET Core 2**
 
 ## What is this book about?
 When it comes to writing a clean, object-oriented code in JavaScript, it gets trickier and complex as the size of the project grows. This is where a Typescript comes into a picture with which you can write pure object-oriented code without any hustle. This gives Typescript an upper hand over JavaScript. This book starts by introducing TypeScript basic concepts by modifying gradually standard JavaScript code, which makes it easy for C# Asp.NET developers who are aiming for a transition to learning TypeScript, which they can now add to their development toolkit.
